@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Bakery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        /* Remove the jumbotron's default bottom margin */
+        
+        .jumbotron {
+            margin-bottom: 0;
+            height: 400px;
+        }
+        
+        .jumbotron {
+            background: url("image/cupcakes.jpg") no-repeat center center;
+            background-size: 100%;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: black;
+            padding: 25px;
+            height: 300px;
+            color: white;
+            /*width: 1519px;*/
+        }
+        
+        .height {
+            height: 200px;
+        }
+        
+        .text {
+            font-family: Times new roman;
+            text-align: left;
+            float: left;
+            padding: 25px;
+        }
+        
+        .head {
+            text-align: center;
+            padding: 10px;
+            font-family: Times new roman;
+            color: black;
+        }
+       .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+            color: #fff;
+            background-color: #85C1E9;
+        }
+        .text{
+            margin-right: 20px;
+        }
+       .well-lg {
+    
+           height: 130px;
+       }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center head">
+            <h1>MY BAKERY</h1>
+            <p>WHENEVER WE BAKE, BAKE WITH OUR HEART</p>
+            <h2 style="text-decoration-line:overline underline;"><b>Love with baking items</b></h2>
+            <p>Since Americans in the South began roasting pigs publicly, Barbecues have been a staple of North American living. For many, grilling becomes a routine mealtime activity.</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">MY BAKERY</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="#">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <!-- <li class="active"><a href="#">Blogs</a> -->
+          <li>
+              <!-- <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" >Blogs
+              <span class="caret"></span></button> -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Blogs <span class="caret"></span></a> 
+              <ul class="dropdown-menu">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="product.html">Products</a></li>
+              </ul>
+            </li>
+          <!-- </li> -->
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="youraccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">Breads</a></li>
+            <li><a data-toggle="pill" href="#menu1">Quick Bite</a></li>
+            <li><a data-toggle="pill" href="#menu2">Sweets</a></li>
+            <li><a data-toggle="pill" href="#menu3">Pastries</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+     <div class="tab-content">
+               <div id="home" class="tab-pane fade in active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg" style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Brown Bread</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2 ">
+                                        <div>
+                                        <p>Only@</p>
+                                       </div>
+                                       <br>
+                                       <div>
+                                       40
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg" style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Methi Bread</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2 ">
+                                        <div>
+                                        <p>Only@</p>
+                                       </div>
+                                       <br>
+                                       <div>
+                                       40
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg" style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Garlic Bread</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+               <div id="menu1" class="tab-pane fade">
+                        <div class="container">
+                            <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg" style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Paneer Puff</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Chicken Puff</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Pav Bhaji</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                   <div id="menu2" class="tab-pane fade">
+                        <div class="container">
+                            <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Gulab Jammun</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Ras malai</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Rasgulla</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <div class="container">
+                            <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Choco Chips</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Vanilla</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-sm-12">
+                                <div class="well well-lg"style="background-color:#FBEEE6 ">
+                                    <div class="col-sm-10">
+                                    <b>Brownies</b>
+                                    <p>Buy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift cardBuy 50 mobiles and get a gift card</p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div>
+                                            <p>Only@</p>
+                                        </div><br>
+                                        <div>
+                                        40
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <footer class="container-fluid text-center">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="text"><b style="font-size:20px;">About Us</b>
+                                    <br> If you own an Iphone,
+                                    <br> you’ve probably already worked out how much fun it is to use it to watch movies-it has that.
+                                    <br>
+                                    <br>
+                                    <br><b style="font-size:18px;"><i>Copyright @ Online Store 2019 </i></b></p>
+
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <p class="text"><b style="font-size:20px;">Get deals:</b>
+                                        <br>
+                                        <input type="email" class="form-control" id="email" placeholder="Email Address" size="50" name="email">
+                                        </br>
+                                        <button type="button" class="btn btn-danger">Sign Up</button>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <p class="text"><b style="font-size:20px;">Follow Us:</b>
+                                    <br> Let us be social
+                                    <br>
+                                </p>
+                                </br>
+
+                            </div>
+                        </div>
+                    </footer>
+
+</body>
+
+</html>

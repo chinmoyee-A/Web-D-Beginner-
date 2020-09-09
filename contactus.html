@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Bakery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script>
+function validateForm() {
+  var x = document.forms["login"]["email"].value;
+  if (x == "") {
+    alert("E-mail must be filled out");
+    return false;
+  }
+ 
+  var y = document.forms["login"]["pwd"].value;
+  if (y == "") {
+    alert("Password  must be filled out");
+    return false;
+  }
+   
+  var z = document.forms["login"]["comment"].value;
+  if (z == "") {
+    alert("comment section is to be filled");
+    return false;
+  }
+}
+  </script>
+
+  
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      height: 400px;
+      margin-bottom: 0;
+      background: url("image/cupcakes.jpg") no-repeat center center; 
+    background-size:100%;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: black;
+      padding: 25px;
+      color: white;
+      height: 300px;
+    }
+    .map-container-4{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-4 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+.text{
+  font-family: Times new roman;
+  text-align: left;
+  float: left;
+  padding:25px;
+}
+.glp {
+  float: left;
+    padding: 20px;
+    margin-right: 4px;
+
+
+}
+.head{
+  text-align: center;
+  padding:10px;
+  font-family: Times new roman;
+  color:black; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center head">
+    <h1>MY BAKERY</h1>      
+    <p>WHENEVER WE BAKE, BAKE WITH OUR HEART</p>
+    <h2 style="text-decoration-line:overline underline;"><b>Love with baking items</b></h2>
+    <p>Since Americans in the South began roasting pigs publicly, Barbecues have been a staple of North American living. For many, grilling becomes a routine mealtime activity.</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     <a class="navbar-brand" href="home.html">MY BAKERY</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <!-- <li class="active"><a href="#">Blogs</a> -->
+          <li>
+              <!-- <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" >Blogs
+              <span class="caret"></span></button> -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Blogs <span class="caret"></span></a> 
+              <ul class="dropdown-menu">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="product.html">Products</a></li>
+              </ul>
+            </li>
+          <!-- </li> -->
+        <li  class="active"><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="youraccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container"> 
+ <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+        style="border:0" width="550px" height="300px"></iframe>
+
+<div class="col-md-6">
+  <form action=" " class="text" name="login" onsubmit="validateForm()" method="post">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="message" class="text">Write Message:
+      <textarea class="form-control" rows="5" cols="40" id="comment" name="comment" placeholder="comment"></textarea></label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div><br>
+  
+      <button type="submit" class="btn btn-default">Submit</button><br><br>
+  </form>
+  </div>
+  
+   <p style="padding:3px;"><span class="glyphicon glyphicon-home glp" style="font-size:30px" ><br></span><br>Binghamton, New York<br>
+4343 Hinkle Deegan Lake Road</p> <br>
+<p style="padding:3px;"> <span class="glyphicon glyphicon-earphone glp" style="font-size:30px"><br></span> 00 (958) 9865 562<br>
+Mon to Fri 9am to 6 pm</p><br>
+  <p style="padding:3px;"> <span class="glyphicon glyphicon-envelope glp" style="font-size:30px"><br></span>support@colorlib.com<br>
+Send us your query anytime!</p>
+ 
+  
+</div><br><br>
+
+<footer class="container-fluid text-center">   
+   
+  <div class="row">
+    <div class="col-sm-4">    
+          <p class="text"><b style="font-size:20px;">About Us</b><br>
+            If you own an Iphone,<br> you’ve probably already worked out how much fun it is to use it to watch movies-it has that.<br><br><br><b style="font-size:18px;"><i>Copyright @ Online Store 2019 </i></b></p> 
+                
+    </div>
+
+    <div class="col-sm-4"> 
+    <div class="form-group">
+      <p class="text"><b style="font-size:20px;">Get deals:</b><br>
+      <input type="email" class="form-control" id="email" placeholder="Email Address" size="50"  name="email"></br>
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </div>
+    </div>
+     
+    <div class="col-sm-4"> 
+      <p class="text"><b style="font-size:20px;">Follow Us:</b><br>
+            Let us be social<br></p> </br> 
+          
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

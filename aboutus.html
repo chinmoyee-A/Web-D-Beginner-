@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Bakery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        /* Remove the jumbotron's default bottom margin */
+        
+        .jumbotron {
+            margin-bottom: 0;
+        }
+        
+        .jumbotron {
+            background: url("image/cupcakes.jpg") no-repeat center center;
+            background-size: 100%;
+            height: 400px;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: black;
+            padding: 25px;
+            height: 300px;
+            color: white;
+            /*width: 1519px;*/
+        }
+        
+        .height {
+            height: 200px;
+        }
+        
+        .text {
+            font-family: Times new roman;
+            text-align: left;
+            float: left;
+            padding: 25px;
+        }
+        
+        .head {
+            text-align: center;
+            padding: 10px;
+            font-family: Times new roman;
+            color: black;
+        }
+       .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+            color: #fff;
+            background-color: red;
+        }
+        .image{
+  /*float: left;
+  width: 499px;
+  padding: 10px;
+  height: 560px;*/
+  background-image: url('image/cover.jpg');
+  background-repeat: no-repeat;
+background-size: 1536px;
+height: 500px;
+width: 1536px;  
+
+}
+ background: url("http://myinstantcms.ru/images/bg-broun1.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+    padding-bottom: 34px;
+}
+.block-text {
+    background-color:black;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #2c2222;
+    color: #626262;
+    font-size: 14px;
+    margin-top: 27px;
+    padding: 15px 18px;
+}
+.block-text a {
+ color: #7d4702;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.mark {
+    padding: 12px 0;background:none;
+}
+.block-text p {
+    color: black;
+    font-family: Times new roman;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.sprite-i-triangle {
+    background-position: 0 -1298px;
+    height: 44px;
+    width: 50px;
+}
+.block-text ins {
+    bottom: -44px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+.block {
+    display: block;
+}
+.zmin {
+    z-index: 1;
+}
+.ab {
+    position: absolute;
+}
+
+.person-text {
+    padding: 10px 0 0;
+    text-align: center;
+    z-index: 2;
+}
+.person-text a {
+    color: black;
+    display: block;
+    font-size: 14px;
+    margin-top: 3px;
+    text-decoration: underline;
+}
+.person-text i {
+    color: black;
+    font-family: Georgia;
+    font-size: 13px;
+}
+.rel {
+    position: relative;
+}
+.review{
+  text-align: center;
+  font-family: Times new roman;
+  font-size:45px; 
+}
+.logo1{
+  margin-bottom: 10px;
+  margin left: 0px;
+  margin-right: 0px;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center head">
+    <h1>MY BAKERY</h1>      
+    <p>WHENEVER WE BAKE, BAKE WITH OUR HEART</p>
+    <h2 style="text-decoration-line:overline underline;"><b>Love with baking items</b></h2>
+    <p>Since Americans in the South began roasting pigs publicly, Barbecues have been a staple of North American living. For many, grilling becomes a routine mealtime activity.</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a class="navbar-brand" href="home.html">MY BAKERY</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li  class="active"><a href="#">About Us</a></li>
+         <!-- <li class="active"><a href="#">Blogs</a> -->
+          <li>
+              <!-- <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" >Blogs
+              <span class="caret"></span></button> -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Blogs <span class="caret"></span></a> 
+              <ul class="dropdown-menu">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="product.html">Products</a></li>
+              </ul>
+            </li>
+          <!-- </li> -->
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="youraccount.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-7">
+            <h6 class="text" style="font-size:30px">Brand New App To Blow Your Mind blend</h6>
+          <span><h1>
+             We’ve baked every item
+            from the core of our heart to serve you</h1></span>
+            
+            <p>
+                <span>We are here to listen from you deliver exellence by any means</span>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+            </p>
+            <button type="button" class="btn btn-info">Get Started</button>
+        </div>
+
+        <div class="col-lg-5">
+          <img src="image/about.jpg" width="600px">
+            
+        </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  
+    <div class="row">
+        <div class="col-lg-12 image">
+         
+ <div class="col-md-9 pb-40 header-text text-center">
+<h1 class="pb-10 text-white review">Enjoy our Client’s Review</h1>
+
+<i><b>Who are in extremely love with eco friendly system.</b></i>
+<div class="container">
+  <div class="row">
+    
+  </div>
+</div>
+<div class="carousel-reviews broun-block">
+    <div class="container">
+        <div class="row">
+            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+            
+                <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="col-md-4 col-sm-6">
+                    <div class="block-text rel zmin">
+                    <a title="" href="#">Hercules</a>
+                  <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                  <b> <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p></b>
+                  <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                  </div>
+              <div class="person-text rel">
+                        
+                <a title="" href="#">Anna</a>
+                <i>from Glasgow, Scotland</i>
+              </div>
+            </div>
+                  <div class="col-md-4 col-sm-6 hidden-xs">
+                <div class="block-text rel zmin">
+                    <a title="" href="#">The Purge: Anarchy</a>
+                  <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+               <b>    <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p></b> 
+                      <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                    </div>
+              <div class="person-text rel">
+                        
+                    <a title="" href="#">Ella Mentree</a>
+                <i>United States</i>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+              <div class="block-text rel zmin">
+                <a title="" href="#">Planes: Fire & Rescue</a>
+                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+             <b>  <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p></b> 
+                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+              </div>
+              <div class="person-text rel">
+                
+                <a title="" href="#">Rannynm</a>
+                <i>Indonesia</i>
+              </div>
+            </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4 col-sm-6">
+                    <div class="block-text rel zmin">
+                    <a title="" href="#">Hercules</a>
+                  <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                  <b>   <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p></b> 
+                  <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                  </div>
+              <div class="person-text rel">
+                <img alt="" src="http://myinstantcms.ru/images/img13.png">
+                <a title="" href="#">Anna</a>
+                <i>from Glasgow, Scotland</i>
+              </div>
+            </div>
+                  <div class="col-md-4 col-sm-6 hidden-xs">
+                <div class="block-text rel zmin">
+                    <a title="" href="#">The Purge: Anarchy</a>
+                  <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+               <b>  <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p></b> 
+                      <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                    </div>
+              <div class="person-text rel">
+                <img alt="" src="http://myinstantcms.ru/images/img14.png">
+                    <a title="" href="#">Ella Mentree</a>
+                <i>United States</i>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+              <div class="block-text rel zmin">
+                <a title="" href="#">Planes: Fire & Rescue</a>
+                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+                 <b><p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p></b> 
+                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+              </div>
+              <div class="person-text rel">
+                <img alt="" src="http://myinstantcms.ru/images/img15.png">
+                <a title="" href="#">Rannynm</a>
+                <i>Indonesia</i>
+              </div>
+            </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-4 col-sm-6">
+                    <div class="block-text rel zmin">
+                    <a title="" href="#">Hercules</a>
+                  <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                <b>  <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                  <ins class="ab zmin sprite sprite-i-triangle block"></ins></b>  
+                  </div>
+              <div class="person-text rel">
+                <img alt="" src="http://myinstantcms.ru/images/img13.png">
+                <a title="" href="#">Anna</a>
+                <i>from Glasgow, Scotland</i>
+              </div>
+            </div>
+                  <div class="col-md-4 col-sm-6 hidden-xs">
+                <div class="block-text rel zmin">
+                    <a title="" href="#">The Purge: Anarchy</a>
+                  <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                <b>   <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
+                      <ins class="ab zmin sprite sprite-i-triangle block"></ins></b> 
+                    </div>
+              <div class="person-text rel">
+                <img alt="" src="http://myinstantcms.ru/images/img14.png">
+                    <a title="" href="#">Ella Mentree</a>
+                <i>United States</i>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+              <div class="block-text rel zmin">
+                <a title="" href="#">Planes: Fire & Rescue</a>
+                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+               <b>   <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p></b> 
+                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+              </div>
+              <div class="person-text rel">
+                <img alt="" src="http://myinstantcms.ru/images/img15.png">
+                <a title="" href="#">Rannynm</a>
+                <i>Indonesia</i>
+              </div>
+            </div>
+                    </div>                    
+                </div>
+                <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+         </div>
+      </div>
+ 
+  
+  <br>
+      <footer class="container-fluid text-center">
+          <div class="row">
+              <div class="col-sm-4">
+                  <p class="text"><b style="font-size:20px;">About Us</b>
+                  <br> If you own an Iphone,
+                  <br> you’ve probably already worked out how much fun it is to use it to watch movies-it has that.
+                  <br>
+                  <br>
+                  <br><b style="font-size:18px;"><i>Copyright @ Online Store 2019 </i></b></p>
+              </div>
+              <div class="col-sm-4">
+                  <div class="form-group">
+                      <p class="text"><b style="font-size:20px;">Get deals:</b>
+                          <br>
+                          <input type="email" class="form-control" id="email" placeholder="Email Address" size="50" name="email">
+                          </br>
+                          <button type="button" class="btn btn-danger">Sign Up</button>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <p class="text"><b style="font-size:20px;">Follow Us:</b>
+                      <br> Let us be social
+                      <br>
+                  </p>
+                  </br>
+
+              </div>
+          </div>
+      </footer>
+</body>
+</html>

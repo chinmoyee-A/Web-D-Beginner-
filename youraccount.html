@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MY BAKERY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+function validateForm() {
+  var x = document.forms["login"]["fname"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+  var y = document.forms["login"]["lname"].value;
+  if (y == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+  var z = document.forms["login"]["email"].value;
+  if (z == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  var p = document.forms["login"]["phone"].value;
+  if (p == "") {
+    alert("Phone must be filled out");
+    return false;
+  }
+  var q = document.forms["login"]["address"].value;
+  if (q == "") {
+    alert("Address must be filled out");
+    return false;
+  }
+    
+}
+</script>
+
+
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        /* Remove the jumbotron's default bottom margin */
+        
+        .jumbotron {
+            height: 400px;
+            margin-bottom: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: black;
+            padding: 25px;
+            height: 300px;
+            color: white;
+        }
+        
+        .jumbotron {
+            background: url("image/cupcakes.jpg") no-repeat center center;
+            background-size: 100%;
+        }
+        
+        .height {
+            height: 200px;
+        }
+        
+        .text {
+            font-family: Times new roman;
+            text-align: left;
+            float: left;
+            padding: 25px;
+        }
+        
+        .head {
+            text-align: center;
+            padding: 10px;
+            font-family: Times new roman;
+            color: black;
+        }
+        
+        .send-button {
+            background: #54C7C3;
+            width: 100%;
+            font-weight: 600;
+            color: #fff;
+            padding: 8px 25px;
+        }
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        .g-button {
+            color: #fff !important;
+            border: 1px solid #EA4335;
+            background: #ea4335 !important;
+            width: 100%;
+            font-weight: 600;
+            color: #fff;
+            padding: 8px 25px;
+        }
+        
+        .my-input {
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            cursor: text;
+            padding: 8px 10px;
+            transition: border .1s linear;
+        }
+        
+        .header-title {
+            margin: 5rem 0;
+        }
+        
+        h1 {
+            font-size: 31px;
+            line-height: 40px;
+            font-weight: 600;
+            color: #4c5357;
+        }
+        
+        h2 {
+            color: #5e8396;
+            font-size: 21px;
+            line-height: 32px;
+            font-weight: 400;
+        }
+        
+        .login-or {
+            position: relative;
+            color: #aaa;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .span-or {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: -2px;
+            margin-left: -25px;
+            background-color: #fff;
+            width: 50px;
+            text-align: center;
+        }
+        
+        .hr-or {
+            height: 1px;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+        
+        @media screen and (max-width:480px) {
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+        
+        .style {
+            text-align: center;
+            font-size: 40px;
+            font-family: Times new roman;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center head">
+            <h1>MY BAKERY</h1>
+            <p>WHENEVER WE BAKE, BAKE WITH OUR HEART</p>
+            <h2 style="text-decoration-line:overline underline;"> <b style="color:#070707">Love with baking items</b> </h2>
+            <p>Since Americans in the South began roasting pigs publicly, Barbecues have been a staple of North American living. For many, grilling becomes a routine mealtime activity.</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="file:///C:/html/bsproject/home.html">MY BAKERY</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <!-- <li class="active"><a href="#">Blogs</a> -->
+          <li>
+              <!-- <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" >Blogs
+              <span class="caret"></span></button> -->
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Blogs <span class="caret"></span></a> 
+              <ul class="dropdown-menu">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="lifestyle.html">Lifestyle</a></li>
+                <li><a href="product.html">Products</a></li>
+              </ul>
+            </li>
+          <!-- </li> -->
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="style">
+            <p> <b>The Way To A Person's Heart Is Through Their Stomach
+                                    </b>
+            </p>
+        </div>
+        <div class="col-md-6" style="text-align:center">
+            <div class="header-title">
+                <h1 class="wv-heading--title">
+               Check out — it’s free!
+            </h1>
+                <h2 class="wv-heading--subtitle">
+               Lorem ipsum dolor sit amet! Neque porro quisquam est qui do dolor amet, adipisci velit...
+            </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="myform form ">
+                    <form action="" method="post" name="login" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <input type="text" name="fname" class="form-control my-input" id="fname" placeholder="First Name">
+                            <br>
+                            <input type="text" name="lname" class="form-control my-input" id="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control my-input" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" min="0" name="phone" id="phone" class="form-control my-input" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea class="form-control"name="address" rows="5" id="comment" placeholder="Address"></textarea>
+                        </div>
+
+                        <div class="text-center ">
+                            <button type="submit" class=" btn btn-block send-button tx-tfm">Create Your Free Account</button>
+                        </div>
+                        <!-- <div class="col-md-12 ">
+                     <div class="login-or">
+                        <hr class="hr-or">
+                        <span class="span-or">or</span>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <a class="btn btn-block g-button" href="#">
+                     <i class="fa fa-google"></i> Sign up with Google
+                     </a>
+                  </div> -->
+                        <p class="small mt-3">By signing up, you are indicating that you have read and agree to the <a href="#" class="ps-hero__content__link">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text"><b style="font-size:20px;">About Us</b>
+                    <br> If you own an Iphone,
+                    <br> you’ve probably already worked out how much fun it is to use it to watch movies-it has that.
+                    <br>
+                    <br>
+                    <br><b style="font-size:18px;"><i>Copyright @ Online Store 2019 </i></b></p>
+
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <p class="text"><b style="font-size:20px;">Get deals:</b>
+                        <br>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" size="50" name="email">
+                        </br>
+                        <button type="button" class="btn btn-danger">Sign Up</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <p class="text"><b style="font-size:20px;">Follow Us:</b>
+                    <br> Let us be social
+                    <br>
+                </p>
+                </br>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
